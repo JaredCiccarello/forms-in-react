@@ -8,25 +8,7 @@ import Form from 'react-bootstrap/Form';
 
 let data = [1,2,3,4,5,6,7,8,9,10];
 
-class App extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      fullName: '',
-      howToFilter: '',
-      rawData: data,
-      filteredData: data
-    }
-  }
-
-  handleSubmit = (event) => {
-    event.preventDefault();
-    let fullName = `${event.target.firstname.value} ${event.target.lastname.value}`;
-    console.log(fullName);
-
-  this.setState({
-    fullName: fullName,
-    // howToFilter: event.target.selected.value
+et.selected.value
   });
   // setState is slow so you can't use it right away
   // console.log(this.state.howToFilter); // odd, even, all
